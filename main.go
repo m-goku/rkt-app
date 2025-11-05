@@ -8,7 +8,7 @@ import (
 	"github.com/m-goku/rkt"
 )
 
-type application struct {
+type Main struct {
 	App        *rkt.RKT
 	Handlers   *handlers.Handlers
 	Models     data.Models

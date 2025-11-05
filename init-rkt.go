@@ -10,7 +10,7 @@ import (
 	"github.com/m-goku/rkt"
 )
 
-func initApplication() *application {
+func initApplication() *Main {
 	path, err := os.Getwd()
 	if err != nil {
 		log.Fatal(err)
@@ -33,7 +33,7 @@ func initApplication() *application {
 		App: rkt,
 	}
 
-	app := &application{
+	app := &Main{
 		App:        rkt,
 		Handlers:   myHandlers,
 		Middleware: myMiddleware,

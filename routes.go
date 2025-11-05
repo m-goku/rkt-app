@@ -6,7 +6,7 @@ import (
 	"github.com/go-chi/chi/v5"
 )
 
-func (a *application) routes() *chi.Mux {
+func (a *Main) routes() *chi.Mux {
 	//middleware must come before any routes
 	//a.use(a.Middleware.CheckRemember)
 	//add routes
